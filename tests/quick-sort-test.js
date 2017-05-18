@@ -43,17 +43,3 @@ it('should sort strings from low to high', () => {
 })
 
 })
-describe('quicksort sorting algorithm', () => {
-
-it('should sort a larger array than mergesort can', () => {
-var randomNums1 = genRandNum(170000);
-var randomArray1 = Array.from(randomNums1);
-var quickSorted1 = quickSort(randomArray1)
-
-randomArray1 = [...randomNums1].sort((a, b) => a - b);
-expect(quickSorted1[0]).to.deep.equal(randomArray1[0]);
-expect(quickSorted1[2500]).to.deep.equal(randomArray1[2500]);
-expect(quickSorted1[randomArray1.length-1]).to.deep.equal(randomArray1[randomArray1.length-1]);
-});
-
-});

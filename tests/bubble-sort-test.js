@@ -16,7 +16,7 @@ expect(sorted).to.deep.equal([0, 1, 2, 4, 6, 7])
 });
 
 it('should sort a mid size number array', () => {
-var randomNums = genRandNum(7900);
+var randomNums = genRandNum(7500);
 var randomArray = Array.from(randomNums);
 var bubbleSorted = bubbleSort(randomArray)
 
