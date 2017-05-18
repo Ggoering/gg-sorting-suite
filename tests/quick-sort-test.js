@@ -15,7 +15,7 @@ var sorted = quickSort(array);
 expect(sorted).to.deep.equal([0, 1, 2, 4, 6, 7])
 });
 
-it('should sort slightly slower than mergesort on the same size array', () => {
+it('should be compareable to mergesort on the same size array', () => {
 var randomNums = genRandNum(141000);
 var randomArray = Array.from(randomNums);
 var quickSorted = quickSort(randomArray)
@@ -46,7 +46,7 @@ it('should sort strings from low to high', () => {
 describe('quicksort sorting algorithm', () => {
 
 it('should sort a larger array than mergesort can', () => {
-var randomNums1 = genRandNum(180000);
+var randomNums1 = genRandNum(170000);
 var randomArray1 = Array.from(randomNums1);
 var quickSorted1 = quickSort(randomArray1)
 
