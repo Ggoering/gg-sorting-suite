@@ -34,4 +34,10 @@ var sorted = Array.from(insertionSort(theString));
 expect(sorted).to.deep.equal(['a', 'a', 'b', 'e', 'h', 'l', 'p', 't' ]);
 })
 
+it('should sort strings from low to high', () => {
+  var array = ['q', 'abc', 'a', 'defg']
+  var answer = insertionSort(array)
+  expect(answer).to.deep.equal(['a', 'abc', 'defg', 'q'])
+})
+
 })

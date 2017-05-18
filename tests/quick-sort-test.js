@@ -36,11 +36,17 @@ var sorted = Array.from(quickSort(theString));
 expect(sorted).to.deep.equal(['a', 'a', 'b', 'e', 'h', 'l', 'p', 't' ]);
 })
 
+it('should sort strings from low to high', () => {
+  var array = ['q', 'abc', 'a', 'defg']
+  var answer = quickSort(array)
+  expect(answer).to.deep.equal(['a', 'abc', 'defg', 'q'])
+})
+
 })
 describe('quicksort sorting algorithm', () => {
 
 it('should sort a larger array than mergesort can', () => {
-var randomNums1 = genRandNum(180000);
+var randomNums1 = genRandNum(165000);
 var randomArray1 = Array.from(randomNums1);
 var quickSorted1 = quickSort(randomArray1)
 

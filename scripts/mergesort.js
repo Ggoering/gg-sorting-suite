@@ -3,10 +3,10 @@ function mergeSort(array) {
   if (array.length < 2) {
     return array
   }
-  let left = array.splice(0, Math.floor(array.length/2));
-  let right = array.splice(0);
-  left = mergeSort(left);
-  right = mergeSort(right);
+  let leftArray = array.splice(0, Math.floor(array.length/2));
+  let rightArray = array.splice(0);
+  var left = mergeSort(leftArray);
+  var right = mergeSort(rightArray);
 return merge(left, right)
 }
 
